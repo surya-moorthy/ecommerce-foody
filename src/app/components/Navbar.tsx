@@ -5,6 +5,8 @@ import { HoveredLink, Menu, MenuItem } from '@/components/ui/navbar-menu'
 import React, { useState } from 'react'
 import { ModeToggle } from './themeToggle';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+
 
 export const Navbar = () => {
     const [active, setActive] = useState<string | null>(null);
@@ -46,10 +48,14 @@ export const Navbar = () => {
                    <ModeToggle/>
              </div>
               <div className='px-2 py-1 text-xl cursor-pointer'>
-                  <Button className='text-xl' variant={"link"}>Signin</Button>
+                  <Link href="/signin">
+                        <Button className='text-xl' variant={"link"}>Signin</Button>
+                   </Link>
               </div> 
               <div className='px-2 py-1 text-xl cursor-pointer '>
-              <Button className='text-xl' variant={"link"}>Register</Button>
+              <Link href="/register">
+                        <Button className='text-xl' variant={"link"}>Register</Button>
+               </Link>
               </div>
         </div>
     </div>

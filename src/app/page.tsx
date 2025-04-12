@@ -26,6 +26,7 @@ export default function Home() {
                       <Card itemName="Biriyani" itemImage="/Hyderabadi-Biryani.webp" itemDescription="Hydrebadi Biriyani" rate="Rs.130/-"/>
                   </div>
               </div>
+              
      </div>
   
   );
